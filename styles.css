@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  }
+  
+  :root {
+    --primary-font-family: "Inter", sans-serif;
+    --primary-color: #ff6b00;
+    --color-secondary: #ec5242;
+    --color-tertiary: #d3d3d3;
+    --color-white: #fff;
+    --color-grey: #585858;
+    --color-light-grey: #ebf0ee;
+  }
+  
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-first {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid #7676ff;
+  }
+  
+  .nav-first p {
+    color: #7676ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    margin: 2px 2px;
+    padding: 2px 2px;
+  }
+  
+  .nav-second {
+    width: fit-content;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #7676ff;
+  }
+  
+  .nav-second p {
+    color: #7676ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  .container-time {
+    margin: auto;
+    padding: 1rem 5%;
+    max-height: 100vw;
+    color: #000;
+  }
+  
+  #date {
+    color: #7676ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  .date {
+    text-align: end;
+  }
+  
+  .container {
+    margin: auto;
+    padding: 0 5%;
+    max-height: 100vw;
+    color: #000;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+    max-width: 800px;
+  }
+  
+  #book-addition {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    border: 2px solid black;
+  }
+  
+  #book-addition div {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+  
+  #book-addition div:nth-of-type(odd) {
+    background-color: #e59933;
+  }
+  
+  #book-addition div:nth-of-type(even) {
+    background-color: #eded5a;
+  }
+  
+  button {
+    width: fit-content;
+    border: 1px solid gray;
+    color: aliceblue;
+    border-radius: 4px;
+    box-shadow: 5px 6px #232421;
+    padding: 3px;
+    background-color: #e30664;
+  }
+  
+  button:hover {
+    border: 1px solid #000;
+    background-color: rgba(255, 235, 205, 0.705);
+    color: #000;
+  }
+  
+  #book-addition div button {
+    float: right;
+  }
+  
+  .add-books {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  #form {
+    width: 40%;
+    display: block;
+    margin: auto;
+    position: relative;
+  }
+  
+  .contact h1 {
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+  
+  #form h1 {
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #form #title {
+    width: 80%;
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    margin: auto;
+    border: 2px solid #000;
+  }
+  
+  #form #author {
+    width: 80%;
+    display: block;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 1rem;
+    margin: auto;
+  }
+  
+  #form-btn {
+    width: 15%;
+    display: block;
+    margin: auto;
+  }
+  
+  .contact {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .contact-text {
+    text-align: center;
+    width: 80%;
+  }
+  
+  .contact-text h2 {
+    color: #323246;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  .contact-text h3 {
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  .contact-text ul li {
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .contact-text ul li a {
+    color: #ae0bf1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .nav-first p a:hover {
+    color: #7676ff;
+  }
+  
+  .nav-second p a:hover {
+    color: #7676ff;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: #000 2px solid;
+    color: #000;
+    margin-top: 10rem;
+  }
+  
+  .footer p {
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  }
+  
+  #book-addition div p {
+    display: inline;
+    justify-content: space-around;
+    width: 100%;
+    color: #323246;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  

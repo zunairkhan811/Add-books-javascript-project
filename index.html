@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/38b6d4ab77.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Meera+Inimai&family=Poppins&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add Books javascript Project</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-first">
+        <p>Awesome Books</p>
+        <p><a class="list-page" href="#">List</a></p>
+      </div>
+      <div class="nav-second">
+        <p><a class="add-page" href="#">Add New</a></p>
+      </div>
+      <div class="nav-second">
+        <p><a class="contact-page" href="#">Contact</a></p>
+      </div>
+    </nav>
+    <div class="container-time">
+      <div>
+        <p id="date" class="date">Time</p>
+      </div>
+    </div>
+    <div class="container">
+      <section class="book-list">
+        <h1>All awesome books</h1>
+        <div id="book-addition"></div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="add-books">
+        <form id="form" method="post" action="submit">
+          <h1>Add new Book</h1>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+          /><br /><br />
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Author"
+          /><br /><br />
+          <button id="form-btn">Add</button>
+        </form>
+      </section>
+    </div>
+    <div class="container">
+      <section class="contact">
+        <h1>Contact us</h1>
+        <div class="contact-text">
+          <h2>
+            If you have any questions please contact us. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Dolorem, dignissimos. Porro dolor
+            ipsam ratione tempore iste, enim culpa laudantium nihil quia quidem!
+            Quia harum, fuga deleniti esse neque mollitia alias?
+          </h2>
+          <br />
+          <h3>You can reach us on:</h3>
+          <ul>
+            <li>Our email: <a href="#">mail@mail.com</a></li>
+            <li>Our twitter: <a href="#">@awesomeBooks</a></li>
+            <li>Our github: <a href="#">@awesomeBooks</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>© 2023 Awesome Books, Muhammad Zunair All rights reserved.</p>
+    </footer>
+
+    <script src="refactor.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>
