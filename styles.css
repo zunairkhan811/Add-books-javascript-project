@@ -1,12 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
   }
   
   :root {
@@ -113,11 +110,11 @@
   }
   
   #book-addition div:nth-of-type(odd) {
-    background-color: antiquewhite;
+    background-color: #e59933;
   }
   
   #book-addition div:nth-of-type(even) {
-    background-color: beige;
+    background-color: #eded5a;
   }
   
   button {
