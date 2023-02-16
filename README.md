@@ -23,22 +23,21 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Web-development-course-Project] <a name="about-project"></a>
+# 📖 [Add-Books-javascript-Project] <a name="about-project"></a>
 
 
 
-**[Web-development-course-Project]** is a project of making a portfolio website to showcase 
-my skills to  employers that i can make a responsive website using html, css, Javascript and Bootstrap.
+**[Add-Books-javascript-Project]** is a project of Adding and Removing Books from website using javascript Classes to showcase my javascript skills to  employers.
 
 
-- [Video Link about Project] <a href="https://loom.com/share/b9814f9ce7c5488e91b1aa0b2a93a3fe"><button type="button" color:red background: white>Click Here</button></a>
+- [Video Link about Project] <a href="#"><button type="button" color:red background: white>Click Here</button></a>
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-This project has been made using html, css, javascript and bootstrap according to project requirements.
+This project has been made using html, css, and javascript  according to project requirements.
 
 <details>
   <summary>Client</summary>
@@ -57,8 +56,9 @@ This project has been made using html, css, javascript and bootstrap according t
 
 
 - **[Home_Page_is_Designed]**
-- **[About_Section_is_Designed]**
-- **[Feature_Section_is_Designed_using_javascript]**
+- **[BooksList_Section_is_Designed_using_javascript]**
+- **[BooksAdd_Section_is_Designed_using_javascript]**
+- **[Contact_Section_is_Designed]**
 - **[Responsive_version_is_Made]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -67,9 +67,8 @@ This project has been made using html, css, javascript and bootstrap according t
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- Note: Right now Application hasn't been Deployed yet. In future if this will be deployed,
-Deployed Link will update here -->
-- [Live Demo Link]  <a href="https://zunairkhan811.github.io/Web-development-course-Project/"><button type="button" color:red background: white>Visit Site</button></a>
+
+- [Live Demo Link]  <a href="#"><button type="button" color:red background: white>Visit Site</button></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +99,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:/zunairkhan811/Web-development-course-Project.git
+  git clone git@github.com:/zunairkhan811/Add-books-javascript-Project.git
 ```
 
 
@@ -147,6 +146,8 @@ You can deploy this project using:
 👤 **Author**
 
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
+- Twitter: [@zunairkhan811](https://twitter.com/zunairkhan811)
+- LinkedIn: [zunairkhan811](https://linkedin.com/in/zunairkhan811)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +159,6 @@ You can deploy this project using:
 - [ ] **[Will_try_update_html_file]**
 - [ ] **[Will_try_to_update_css_file]**
 - [ ] **[will_try_to_update_javascript_file]**
-- [ ] **[will_try_to_add_contact_section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +187,7 @@ Thanks!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to give credit to <a href="https://creativecommons.org/licenses/">Cindy Shin</a> in Behance design for inspiring me enough to make this project
+I would like to give credit to Microverse for inspiring me enough to make this project.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
