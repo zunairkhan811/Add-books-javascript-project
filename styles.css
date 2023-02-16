@@ -120,8 +120,11 @@
   button {
     width: fit-content;
     border: 1px solid gray;
+    color: aliceblue;
+    border-radius: 4px;
+    box-shadow: 5px 6px #232421;
     padding: 3px;
-    background-color: aliceblue;
+    background-color: #e30664;
   }
   
   button:hover {
