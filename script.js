@@ -1,87 +1,59 @@
-class Book {
-    constructor(title,author) {
-      this.title = title;
-      this.author = author;  
-    }
-}
+let bookCollection = [];
 
-class ui {
-    static displaybooks() {
-        const books = store.getbooks();
-        books.forEach((book) => ui.addbooktolist(book));   
-    }
+const displayBooks = () => {
+  const bookList = document.getElementById('book-list');
+  bookList.innerHTML = '';
 
-    static addbooktolist(book) {
-        const list = document.querySelector('#book-addition');
-        const div = document.createElement('div');
-        div.innerHTML= `
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <Button class="remove-btn">Remove</Button>
-        <hr>
-        `;
-        list.appendChild(div);
-    }
-    static  deletebook(el) {
-        if (el.classList.contains('remove-btn')) {
-            el.parentElement.remove();
-        }
-    }
-    static clearFields() {
-       document.querySelector('#title').value = ''; 
-       document.querySelector('#author').value = ''; 
-    }
-}
+  bookCollection.forEach((book) => {
+    const bookContainer = document.createElement('article');
+    const bookTitle = document.createElement('p');
+    const bookAuthor = document.createElement('p');
+    const removeBtn = document.createElement('button');
+    const hr = document.createElement('hr');
 
-class store {
-    static getbooks() {
-     let books;
-     if(localStorage.getItem('books') === null) {
-        books = [];
-     }else {
-        books = JSON.parse(localStorage.getItem('books'))
-     }
-     return books;
-    }
-    static addbook(book){
-     const books =  store.getbooks();
-     books.push(book);
-     localStorage.setItem('books',JSON.stringify(books))
-    }
-    static removebook(title){
-     const books = store.getbooks();
-     books.forEach((book,index) => {
-        if(book.title === title){
-            books.splice(index, 1)
-        }
-     });
-     localStorage.setItem('books', JSON.stringify(books));
-    }
-}
+    bookList.appendChild(bookContainer);
+    bookContainer.append(bookTitle, bookAuthor, removeBtn, hr);
+    bookTitle.textContent = book.title;
+    bookAuthor.textContent = book.author;
+    removeBtn.setAttribute('id', book.id);
+    removeBtn.innerText = 'Remove';
 
-document.addEventListener('DOMContentLoaded', ui.displaybooks);
+    const removeBook = (id) => {
+      bookCollection = bookCollection.filter((book) => book.id !== id);
+      localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 
-document.querySelector('#form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const title = document.querySelector('#title').value;
-    const author = document.querySelector('#author').value;
+      displayBooks();
+    };
 
-    if(title === '' || author === ''){
-        alert('Please fill in all fields')
-    }else{
-        const book = new Book(title, author);
-        // console.log(book);
-    
-        ui.addbooktolist(book);
+    removeBtn.addEventListener('click', () => removeBook(book.id));
+  });
+};
 
-        store.addbook(book);
-    
-        ui.clearFields();
-    }
-    
-})
+const addBook = () => {
+  const titleInput = document.getElementById('title-input');
+  const authorInput = document.getElementById('author-input');
+  const id = Math.round(Date.now());
 
-document.querySelector('#book-addition').addEventListener('click', (e) => {
-    ui.deletebook(e.target);
-    store.removebook(e.target.previousElementSibling.previousElementSibling.textContent);
-})
+  const title = titleInput.value;
+  const author = authorInput.value;
+
+  const newBook = { title, author, id };
+
+  bookCollection.push(newBook);
+  localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
+
+  titleInput.value = '';
+  authorInput.value = '';
+  displayBooks();
+};
+
+const addbutton = document.getElementById('addButton');
+addbutton.addEventListener('click', addBook);
+
+window.addEventListener('load', () => {
+  const storedCollection = JSON.parse(localStorage.getItem('bookCollection'));
+  if (storedCollection) {
+    bookCollection.push(...storedCollection);
+  }
+  displayBooks();
+});
